@@ -6,19 +6,24 @@
 }
 
 body {
-    color: rgb(221, 127, 255);
-    background-color: bisque;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 header {
-    background: #680000;
-    color: #fff;
-    padding: 20px 50px;
+    background: hsla(232, 100%, 54%, 0.908);
+    color: #ffffff;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 img {
-    
+    width: 300px;
+
+}
+a{
+
+    color: #ffffff;
 }
