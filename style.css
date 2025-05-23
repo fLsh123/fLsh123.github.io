@@ -6,7 +6,7 @@
 }
 
 body {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
 }
 
@@ -18,12 +18,21 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+nav ul {
+    list-style: none;
+    display: flex;
+}
 
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
 img {
     width: 300px;
 
-}
-a{
-
-    color: #ffffff;
 }
