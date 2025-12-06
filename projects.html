@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Projects - Emmanuel Senaij</title>
+    <title>Projects | Emmanuel Senaij</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -13,26 +15,49 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Projects</h2>
-        <ul>
-            <li>TryHackMe Labs & Reports</li>
-            <li>Portfolio Website</li>
-            <li>Security Analysis on G2A Breach</li>
-            <li>Phishing Detection Challenge - LetsDefend</li>
-        </ul>
+        <h2>Featured Projects</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3><i class="fas fa-bug"></i> Security Analysis</h3>
+                <p>Performed extensive security analysis on G2A breach data, identifying vulnerabilities and suggesting
+                    remediation steps.</p>
+                <br>
+                <a href="#" class="btn-outline" style="font-size: 0.9rem;">View Case Study</a>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-laptop-code"></i> Portfolio Website</h3>
+                <p>Designed and built this portfolio using modern HTML, CSS, and glassmorphism design principles.</p>
+                <br>
+                <a href="#" class="btn-outline" style="font-size: 0.9rem;">View Source</a>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-shield-alt"></i> TryHackMe Labs</h3>
+                <p>Completed various Capture The Flag (CTF) challenges and documented write-ups for training purposes.
+                </p>
+                <br>
+                <a href="#" class="btn-outline" style="font-size: 0.9rem;">Read Reports</a>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-fish"></i> Phishing Detection</h3>
+                <p>Analyzed suspicious emails and domains as part of the LetsDefend phishing detection challenge.</p>
+                <br>
+                <a href="#" class="btn-outline" style="font-size: 0.9rem;">See Results</a>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Emmanuel Senaij. All rights reserved.</p>
+        <p>&copy; 2025 Emmanuel Senaij. Built with precision and passion.</p>
     </footer>
 </body>
+
 </html>
