@@ -307,6 +307,21 @@ p {
     z-index: -1;
 }
 
+.cta-group {
+    display: flex;
+    gap: 2rem;
+    /* Increased gap */
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    align-items: center;
+    /* Ensure vertical alignment */
+}
+
+.cta-group .btn {
+    margin-right: 0;
+    /* Remove default margin */
+}
+
 .btn:hover {
     color: #000;
     box-shadow: var(--glow-cyan);
@@ -403,6 +418,10 @@ footer {
 
     h1 {
         font-size: 2.8rem;
+    }
+
+    .cta-group {
+        justify-content: center;
     }
 }
 
