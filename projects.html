@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <title>Projects | Emmanuel Senaij</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio projects by Emmanuel Senaij – SIEM lab, security tools, CTF write-ups and more.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+    <div id="page-transition"></div>
+    <canvas id="matrix-canvas"></canvas>
+    <div id="cursor-trail"></div>
+
+    <aside class="social-sidebar" aria-label="Social Links">
+        <a href="https://github.com/fLsh123" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/emmanuel-senaij/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:emmanuelsenaij345@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://tryhackme.com/p/emmanuelsenaij34" target="_blank" title="TryHackMe"><i class="fas fa-flag"></i></a>
+    </aside>
+
     <header>
         <div class="logo">ES</div>
         <nav>
@@ -24,51 +36,114 @@
     </header>
 
     <main>
-        <h2>Featured Projects</h2>
+        <h2 class="reveal">Featured Projects</h2>
         <div class="grid-container">
-            <div class="card">
-                <h3><i class="fa-solid fa-tv"></i> SIEM Home lab</h3>
-                <p>SIEM Home Lab implementation using Wazuh, demonstrating centralized security monitoring, log
-                    collection, file integrity monitoring (FIM), and cross-platform agent deployment on Windows, Linux,
-                    and macOS systems.</p>
-                <br>
-                <a href="https://github.com/fLsh123/SIEM-lab" class="btn-outline" style="font-size: 0.9rem;">View
-                    Repository</a>
+
+            <div class="card project-card reveal">
+                <div class="project-header">
+                    <i class="fa-solid fa-tv project-icon"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/fLsh123/SIEM-lab" target="_blank" class="proj-btn" title="Repository">
+                            <i class="fab fa-github"></i> Repo
+                        </a>
+                    </div>
+                </div>
+                <h3>SIEM Home Lab</h3>
+                <p>Wazuh-based SIEM implementation with centralized security monitoring, log collection, file integrity
+                    monitoring, and cross-platform agent deployment on Windows, Linux, and macOS.</p>
+                <div class="tool-pills">
+                    <span class="pill">Wazuh</span>
+                    <span class="pill">Linux</span>
+                    <span class="pill">Windows</span>
+                    <span class="pill">SIEM</span>
+                </div>
             </div>
-            <div class="card">
-                <h3><i class="fas fa-laptop-code"></i> Portfolio Website</h3>
-                <p>Designed and built this portfolio using modern HTML, CSS, and glassmorphism design principles.</p>
-                <br>
-                <a href="https://flsh123.github.io/" class="btn-outline" style="font-size: 0.9rem;">View Source</a>
+
+            <div class="card project-card reveal">
+                <div class="project-header">
+                    <i class="fas fa-laptop-code project-icon"></i>
+                    <div class="project-links">
+                        <a href="https://flsh123.github.io/" target="_blank" class="proj-btn">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+                    </div>
+                </div>
+                <h3>Portfolio Website</h3>
+                <p>Designed and built this portfolio using modern HTML, CSS, and a cyberpunk design system with
+                    animations, Matrix rain, and scroll-reveal effects.</p>
+                <div class="tool-pills">
+                    <span class="pill">HTML</span>
+                    <span class="pill">CSS</span>
+                    <span class="pill">JavaScript</span>
+                </div>
             </div>
-            <div class="card">
-                <h3><i class="fas fa-toolbox"></i> Security Tools Collection</h3>
-                <p>A collection of Python-based security tools for encryption, packet sniffing, and network
-                    tracing, keyloger. </p>
-                <br>
-                <a href="https://github.com/fLsh123/Tools" class="btn-outline" style="font-size: 0.9rem;">View
-                    Repository</a>
+
+            <div class="card project-card reveal">
+                <div class="project-header">
+                    <i class="fas fa-toolbox project-icon"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/fLsh123/Tools" target="_blank" class="proj-btn">
+                            <i class="fab fa-github"></i> Repo
+                        </a>
+                    </div>
+                </div>
+                <h3>Security Tools Collection</h3>
+                <p>Python-based security tools for encryption, packet sniffing, network tracing, and keylogging — built
+                    for research and educational purposes.</p>
+                <div class="tool-pills">
+                    <span class="pill">Python</span>
+                    <span class="pill">Networking</span>
+                    <span class="pill">Encryption</span>
+                </div>
             </div>
-            <div class="card">
-                <h3><i class="fas fa-shield-alt"></i> TryHackMe Labs</h3>
-                <p>Completed various Capture The Flag (CTF) challenges and documented write-ups for training purposes.
-                </p>
-                <br>
-                <a href="https://tryhackme.com/p/emmanuelsenaij34" class="btn-outline" style="font-size: 0.9rem;">Read
-                    Reports</a>
+
+            <div class="card project-card reveal">
+                <div class="project-header">
+                    <i class="fas fa-shield-alt project-icon"></i>
+                    <div class="project-links">
+                        <a href="https://tryhackme.com/p/emmanuelsenaij34" target="_blank" class="proj-btn">
+                            <i class="fas fa-flag"></i> Profile
+                        </a>
+                    </div>
+                </div>
+                <h3>TryHackMe Labs</h3>
+                <p>Completed various Capture The Flag (CTF) challenges and documented write-ups covering web
+                    exploitation, privilege escalation, and forensics.</p>
+                <div class="tool-pills">
+                    <span class="pill">CTF</span>
+                    <span class="pill">Pentest</span>
+                    <span class="pill">Forensics</span>
+                    <span class="pill">Web</span>
+                </div>
             </div>
-            <div class="card">
-                <h3><i class="fas fa-fish"></i> Phishing Detection</h3>
-                <p>Analyzed suspicious emails and domains as part of the LetsDefend phishing detection challenge.</p>
-                <br>
-                <a href="#" class="btn-outline" style="font-size: 0.9rem;">See Results</a>
+
+            <div class="card project-card reveal">
+                <div class="project-header">
+                    <i class="fas fa-fish project-icon"></i>
+                    <div class="project-links">
+                        <a href="#" class="proj-btn proj-btn-dim">
+                            <i class="fas fa-lock"></i> Private
+                        </a>
+                    </div>
+                </div>
+                <h3>Phishing Detection</h3>
+                <p>Analyzed suspicious emails and domains as part of the LetsDefend phishing detection challenge,
+                    identifying IOCs and attack vectors.</p>
+                <div class="tool-pills">
+                    <span class="pill">Email Analysis</span>
+                    <span class="pill">IOC</span>
+                    <span class="pill">LetsDefend</span>
+                </div>
             </div>
+
         </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Emmanuel Senaij. Built with precision and passion.</p>
     </footer>
+
+    <script src="animations.js"></script>
 </body>
 
 </html>

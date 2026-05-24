@@ -3,13 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Emmanuel Senaij | Cybersecurity & Programmer </title>
+    <title>Emmanuel Senaij | Cybersecurity &amp; Programmer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emmanuel Senaij – Cybersecurity Analyst, Ethical Hacker, SOC Analyst & Programmer based in Kerala, India.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-logo">ES</div>
+        <div class="loader-output"></div>
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div id="page-transition"></div>
+
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Cursor Trail -->
+    <div id="cursor-trail"></div>
+
+    <!-- Floating Social Sidebar -->
+    <aside class="social-sidebar" aria-label="Social Links">
+        <a href="https://github.com/fLsh123" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/emmanuel-senaij/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:emmanuelsenaij345@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://tryhackme.com/p/emmanuelsenaij34" target="_blank" title="TryHackMe"><i class="fas fa-flag"></i></a>
+    </aside>
+
     <header>
         <div class="logo">ES</div>
         <nav>
@@ -25,11 +50,37 @@
 
     <main class="hero">
         <div class="hero-text">
+            <div class="hero-status-badge">
+                <span class="status-dot"></span>
+                Currently @ Cognizant Technology Solutions
+            </div>
             <h1>Emmanuel Senaij</h1>
-            <p>Cyber Security Analyst • Vulnerability Management • Penetration Testing • Ethical Hacker • Programmer •
-                SOC Analyst</p>
+            <div class="hero-roles-row">
+                <span class="role-bracket">[</span>
+                <span id="typewriter-roles"></span>
+                <span class="role-bracket">]</span>
+            </div>
             <p>Results-driven cybersecurity professional with expertise in vulnerability assessment, risk mitigation,
                 and continuous monitoring.</p>
+
+            <!-- Stats Row -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num" data-target="3">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="11">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+            </div>
+
             <div class="cta-group">
                 <a href="projects.html" class="btn">View Projects</a>
                 <a href="contact.html" class="btn btn-outline">Contact Me</a>
@@ -45,6 +96,8 @@
     <footer>
         <p>&copy; 2025 Emmanuel Senaij. Built with precision and passion.</p>
     </footer>
+
+    <script src="animations.js"></script>
 </body>
 
 </html>

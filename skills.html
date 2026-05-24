@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <title>Skills | Emmanuel Senaij</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emmanuel Senaij's cybersecurity and programming skills.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+    <div id="page-transition"></div>
+    <canvas id="matrix-canvas"></canvas>
+    <div id="cursor-trail"></div>
+
+    <aside class="social-sidebar" aria-label="Social Links">
+        <a href="https://github.com/fLsh123" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/emmanuel-senaij/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:emmanuelsenaij345@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://tryhackme.com/p/emmanuelsenaij34" target="_blank" title="TryHackMe"><i class="fas fa-flag"></i></a>
+    </aside>
+
     <header>
         <div class="logo">ES</div>
         <nav>
@@ -24,34 +36,118 @@
     </header>
 
     <main>
-        <h2>My Skills</h2>
+        <h2 class="reveal">My Skills</h2>
+
+        <!-- ── SKILL BARS ───────────────────────────────────── -->
+        <section class="skill-bars-section reveal">
+            <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                    <span><i class="fas fa-shield-virus"></i> Vulnerability Management</span>
+                    <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="90"></div>
+                </div>
+            </div>
+            <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                    <span><i class="fas fa-user-secret"></i> Ethical Hacking &amp; Pentesting</span>
+                    <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="85"></div>
+                </div>
+            </div>
+            <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                    <span><i class="fas fa-server"></i> SIEM &amp; SOC Operations</span>
+                    <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="80"></div>
+                </div>
+            </div>
+            <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                    <span><i class="fas fa-network-wired"></i> Networking &amp; System Admin</span>
+                    <span class="skill-pct">78%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="78"></div>
+                </div>
+            </div>
+            <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                    <span><i class="fas fa-code"></i> Programming</span>
+                    <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="75"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── TOOL / TECH CARDS ────────────────────────────── -->
+        <h3 class="section-sub reveal">Core Tools &amp; Technologies</h3>
         <div class="grid-container">
-            <div class="card">
-                <h3><i class="fa-solid fa-network-wired"></i> Networking and System Administration</h3>
+            <div class="card reveal">
+                <h3><i class="fa-solid fa-network-wired"></i> Networking &amp; Systems</h3>
                 <p>Understanding protocols (TCP/IP), firewalls, and operating systems (Linux/Windows).</p>
+                <div class="tool-pills">
+                    <span class="pill">TCP/IP</span>
+                    <span class="pill">Firewall</span>
+                    <span class="pill">Linux</span>
+                    <span class="pill">Windows</span>
+                </div>
             </div>
-            <div class="card">
+            <div class="card reveal">
                 <h3><i class="fas fa-shield-virus"></i> Vulnerability Management</h3>
-                <p>Vulnerability Scanning, Assessment, Patch Management, CVE Analysis, CVSS Scoring, OWASP Top 10, Risk
-                    Prioritization</p>
+                <p>Scanning, CVE analysis, CVSS scoring, OWASP Top 10, and risk prioritization.</p>
+                <div class="tool-pills">
+                    <span class="pill">Nessus</span>
+                    <span class="pill">CVSS</span>
+                    <span class="pill">OWASP</span>
+                    <span class="pill">Qualys</span>
+                </div>
             </div>
-            <div class="card">
-                <h3><i class="fas fa-user-secret"></i> Ethical Hacking, Pentesting & Security Tools</h3>
-                <p>Nmap, Burp Suite, Nessus, Metasploit, Aircrack-ng, Snort, Wieshark, John the Ripper, Kali Linux and
-                    identifying vulnerabilities by simulating attacks.</p>
+            <div class="card reveal">
+                <h3><i class="fas fa-user-secret"></i> Ethical Hacking &amp; Pentesting</h3>
+                <p>Nmap, Burp Suite, Metasploit, Aircrack-ng, Snort, Wireshark, John the Ripper, Kali Linux.</p>
+                <div class="tool-pills">
+                    <span class="pill">Nmap</span>
+                    <span class="pill">Burp Suite</span>
+                    <span class="pill">Metasploit</span>
+                    <span class="pill">Kali Linux</span>
+                </div>
             </div>
-            <div class="card">
-                <h3><i class="fas fa-server"></i> SIEM & SOC Operations</h3>
-                <p>Wazuh, Splunk, Log Analysis, MITRE ATT&CK, Threat Detection, Incident Response, Alert Triage</p>
+            <div class="card reveal">
+                <h3><i class="fas fa-server"></i> SIEM &amp; SOC Operations</h3>
+                <p>Wazuh, Splunk, log analysis, MITRE ATT&amp;CK, threat detection, incident response.</p>
+                <div class="tool-pills">
+                    <span class="pill">Wazuh</span>
+                    <span class="pill">Splunk</span>
+                    <span class="pill">MITRE</span>
+                    <span class="pill">Snort</span>
+                </div>
             </div>
-            <div class="card">
+            <div class="card reveal">
                 <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                <p>Python, C, C++, Java, JavaScript, HTML, CSS, PHP,SQL</p>
+                <p>Python, C, C++, Java, JavaScript, HTML, CSS, PHP, SQL</p>
+                <div class="tool-pills">
+                    <span class="pill">Python</span>
+                    <span class="pill">JavaScript</span>
+                    <span class="pill">Java</span>
+                    <span class="pill">SQL</span>
+                </div>
             </div>
-            <div class="card">
+            <div class="card reveal">
                 <h3><i class="fas fa-users"></i> Soft Skills</h3>
-                <p>Communication, Critical Thinking, Problem-Solving, Risk Management, Attention to Detail, Adaptability
-                </p>
+                <p>Communication, critical thinking, problem-solving, risk management, attention to detail.</p>
+                <div class="tool-pills">
+                    <span class="pill pill-green">Analytical</span>
+                    <span class="pill pill-green">Adaptive</span>
+                    <span class="pill pill-green">Detail-Oriented</span>
+                </div>
             </div>
         </div>
     </main>
@@ -59,6 +155,8 @@
     <footer>
         <p>&copy; 2025 Emmanuel Senaij. Built with precision and passion.</p>
     </footer>
+
+    <script src="animations.js"></script>
 </body>
 
 </html>

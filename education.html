@@ -5,11 +5,31 @@
     <meta charset="UTF-8">
     <title>Education | Emmanuel Senaij</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Education, certifications, and professional experience of Emmanuel Senaij.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Page Transition Overlay -->
+    <div id="page-transition"></div>
+
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Cursor Trail -->
+    <div id="cursor-trail"></div>
+
+    <!-- Floating Social Sidebar -->
+    <aside class="social-sidebar" aria-label="Social Links">
+        <a href="https://github.com/fLsh123" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/emmanuel-senaij/" target="_blank" title="LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+        <a href="mailto:emmanuelsenaij345@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://tryhackme.com/p/emmanuelsenaij34" target="_blank" title="TryHackMe"><i
+                class="fas fa-flag"></i></a>
+    </aside>
+
     <header>
         <div class="logo">ES</div>
         <nav>
@@ -23,65 +43,242 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Education & Certifications</h2>
-        <div class="grid-container">
-            <div class="card">
-                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-                <p><strong>B.Sc. Computer Science</strong> (GPA: 7.2/10)<br>St. Albert’s College (Autonomous),
-                    Ernakulam<br><span style="font-size: 0.9em; color: var(--text-secondary);">Aug 2021 – May
-                        2024</span></p>
-                <br>
-                <p><strong>Higher Secondary – Science</strong> (88%)<br>TD HSS, Thuravoor, Kerala<br><span
-                        style="font-size: 0.9em; color: var(--text-secondary);">2019 – 2021</span></p>
-                <br>
-                <p><strong>Secondary Education</strong> (74%)<br>Our Lady of Mercy, Aroor, Kerala<br><span
-                        style="font-size: 0.9em; color: var(--text-secondary);">2018 – 2019</span></p>
+    <main class="edu-main">
+
+        <!-- ── EXPERIENCE TIMELINE ──────────────────────────── -->
+        <section>
+            <h2 class="reveal">Experience</h2>
+            <div class="timeline">
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot"><i class="fas fa-briefcase"></i></div>
+                    <div class="tl-content card">
+                        <div class="tl-meta">
+                            <span class="tl-badge badge-current">Current</span>
+                            <span class="tl-date"><i class="fas fa-calendar-alt"></i> Dec 2024 – Present</span>
+                        </div>
+                        <h3>Analyst</h3>
+                        <p class="tl-company"><i class="fas fa-building"></i> Cognizant Technology Solutions, Kochi</p>
+                        <p>Collaborating with UI/UX teams; Web design with Photoshop, HTML, CSS, JS.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item tl-right reveal">
+                    <div class="tl-dot"><i class="fas fa-shield-alt"></i></div>
+                    <div class="tl-content card">
+                        <div class="tl-meta">
+                            <span class="tl-date"><i class="fas fa-calendar-alt"></i> Apr 2024 – May 2025</span>
+                        </div>
+                        <h3>Cybersecurity Intern</h3>
+                        <p class="tl-company"><i class="fas fa-building"></i> Techbyheart, Kochi</p>
+                        <p>Reconnaissance, Scanning, Vulnerability assessments, Pentesting, Ethical hacking, Nmap, Burp
+                            Suite, Wireshark.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot"><i class="fas fa-user-shield"></i></div>
+                    <div class="tl-content card">
+                        <div class="tl-meta">
+                            <span class="tl-date"><i class="fas fa-calendar-alt"></i> Sep 2024</span>
+                        </div>
+                        <h3>Cybersecurity Intern</h3>
+                        <p class="tl-company"><i class="fas fa-building"></i> Infotech, Remote</p>
+                        <p>Reconnaissance, Scanning, Penetration Testing, Vulnerability Analysis.</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="card">
-                <h3><i class="fas fa-certificate"></i> Certifications</h3>
-                <ul style="padding-left: 1rem; list-style-type: disc; color: var(--text-secondary);">
-                    <li>Certified Ethical Hacker – EC-Council (2025)</li>
-                    <li>Certified Software Tester – Techbyheart (2025)</li>
-                    <li>Advanced SOC Analyst – Techbyheart (2025)</li>
-                    <li>Pre Security – TryHackMe (2026)</li>
-                    <li>Qualys Sensors Foundation – Qualys (2026)</li>
-                    <li>Qualys Enterprise TruRisk™ Platform Foundations – Qualys (2026)</li>
-                    <li>Linux 100: Fundamentals – Tcm Security(2026)</li>
-                    <li>Git & GitHub Bootcamp – LetsUpgrade (2024)</li>
-                    <li>Introduction to Cybersecurity – Cisco (2024)</li>
-                    <li>Threat Intelligence Analyst (Foundation) – arcX (2024)</li>
-                    <li>Cybersecurity Threat Landscape – LinkedIn Learning (2024)</li>
-                </ul>
+        </section>
+
+        <!-- ── EDUCATION TIMELINE ───────────────────────────── -->
+        <section>
+            <h2 class="reveal">Education</h2>
+            <div class="timeline">
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="tl-content card">
+                        <div class="tl-meta">
+                            <span class="tl-date"><i class="fas fa-calendar-alt"></i> 2025 – Present</span>
+                        </div>
+                        <h3>MCA Cybersecurity <span class="tl-grade">GPA: 8.1/10</span></h3>
+                        <p class="tl-company"><i class="fas fa-university"></i> Jain University,Banglore</p>
+                    </div>
+                </div>
+
+                <div class="tl-item tl-right reveal">
+                    <div class="tl-dot"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="tl-content card">
+                        <div class="tl-meta">
+                            <span class="tl-date"><i class="fas fa-calendar-alt"></i> Aug 2021 – May 2024</span>
+                        </div>
+                        <h3>B.Sc. Computer Science <span class="tl-grade">GPA: 7.2/10</span></h3>
+                        <p class="tl-company"><i class="fas fa-university"></i> St. Albert's College (Autonomous),
+                            Ernakulam</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot"><i class="fas fa-school"></i></div>
+                    <div class="tl-content card">
+                        <div class="tl-meta">
+                            <span class="tl-date"><i class="fas fa-calendar-alt"></i> 2019 – 2021</span>
+                        </div>
+                        <h3>Higher Secondary – Science <span class="tl-grade">88%</span></h3>
+                        <p class="tl-company"><i class="fas fa-university"></i> TD HSS, Thuravoor, Kerala</p>
+                    </div>
+                </div>
+
+                <div class="tl-item tl-right reveal">
+                    <div class="tl-dot"><i class="fas fa-book"></i></div>
+                    <div class="tl-content card">
+                        <div class="tl-meta">
+                            <span class="tl-date"><i class="fas fa-calendar-alt"></i> 2018 – 2019</span>
+                        </div>
+                        <h3>Secondary Education <span class="tl-grade">74%</span></h3>
+                        <p class="tl-company"><i class="fas fa-university"></i> Our Lady of Mercy, Aroor, Kerala</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="card">
-                <h3><i class="fas fa-briefcase"></i> Experience</h3>
-                <p><strong>Analyst</strong><br>Cognizant Technology Solutions, Kochi<br><span
-                        style="font-size: 0.9em; color: var(--text-secondary);">Dec 2024 –
-                        Present</span><br>Collaborating with UI/UX teams; Web design with Photoshop, HTML, CSS, JS.</p>
-                <br>
-                <p><strong>Cybersecurity Intern</strong><br>Techbyheart, Kochi<br><span
-                        style="font-size: 0.9em; color: var(--text-secondary);">Apr 2024 – May
-                        2025</span><br>Reconnaissance, Scanning, Vulnerability assessments, Pentesting, Ethical hacking, Nmap, Burp Suite, Wireshark.</p>
-                <br>
-                <p><strong>Cybersecurity Intern</strong><br>Infotech, Remote<br><span
-                        style="font-size: 0.9em; color: var(--text-secondary);">Sep 2024</span><br>Reconnaissance,
-                    Scanning, Penetration Testing, Vulnerability Analysis.</p>
+        </section>
+
+        <!-- ── CERTIFICATIONS GRID ──────────────────────────── -->
+        <section>
+            <h2 class="reveal">Certifications</h2>
+            <div class="cert-grid">
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-hat-wizard"></i></div>
+                    <div class="cert-info">
+                        <strong>Certified Ethical Hacker</strong>
+                        <span>EC-Council · 2025</span>
+                    </div>
+                    <div class="cert-dot"></div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-vial"></i></div>
+                    <div class="cert-info">
+                        <strong>Certified Software Tester</strong>
+                        <span>Techbyheart · 2025</span>
+                    </div>
+                    <div class="cert-dot"></div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-shield-virus"></i></div>
+                    <div class="cert-info">
+                        <strong>Advanced SOC Analyst</strong>
+                        <span>Techbyheart · 2025</span>
+                    </div>
+                    <div class="cert-dot"></div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-flag"></i></div>
+                    <div class="cert-info">
+                        <strong>Pre Security</strong>
+                        <span>TryHackMe · 2026</span>
+                    </div>
+                    <div class="cert-dot"></div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-search"></i></div>
+                    <div class="cert-info">
+                        <strong>Qualys Sensors Foundation</strong>
+                        <span>Qualys · 2026</span>
+                    </div>
+                    <div class="cert-dot"></div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="cert-info">
+                        <strong>Qualys TruRisk™ Foundations</strong>
+                        <span>Qualys · 2026</span>
+                    </div>
+                    <div class="cert-dot"></div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-linux"></i></div>
+                    <div class="cert-info">
+                        <strong>Linux 100: Fundamentals</strong>
+                        <span>TCM Security · 2026</span>
+                    </div>
+                    <div class="cert-dot"></div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-github"></i></div>
+                    <div class="cert-info">
+                        <strong>Git &amp; GitHub Bootcamp</strong>
+                        <span>LetsUpgrade · 2024</span>
+                    </div>
+                    <div class="cert-dot"></div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="cert-info">
+                        <strong>Introduction to Cybersecurity</strong>
+                        <span>Cisco · 2024</span>
+                    </div>
+                    <div class="cert-dot"></div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-binoculars"></i></div>
+                    <div class="cert-info">
+                        <strong>Threat Intelligence Analyst</strong>
+                        <span>arcX · 2024</span>
+                    </div>
+                    <div class="cert-dot"></div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-linkedin"></i></div>
+                    <div class="cert-info">
+                        <strong>Cybersecurity Threat Landscape</strong>
+                        <span>LinkedIn Learning · 2024</span>
+                    </div>
+                    <div class="cert-dot"></div>
+                </div>
+
             </div>
-            <div class="card">
-                <h3><i class="fas fa-trophy"></i> Awards</h3>
-                <p><strong>Albertian Star Nominee</strong><br>St. Albert’s College Star Competition</p>
+        </section>
+
+        <!-- ── AWARDS ────────────────────────────────────────── -->
+        <section>
+            <h2 class="reveal">Awards &amp; Recognition</h2>
+            <div class="awards-row">
+                <div class="award-card reveal">
+                    <i class="fas fa-trophy award-icon"></i>
+                    <div>
+                        <strong>Albertian Star Nominee</strong>
+                        <p>St. Albert's College Star Competition</p>
+                    </div>
+                </div>
+                <div class="award-card reveal">
+                    <i class="fas fa-medal award-icon"></i>
+                    <div>
+                        <strong>Project Completion Acknowledgment</strong>
+                        <p>Albertian Institute of Management · Main Project</p>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3><i class="fas fa-trophy"></i> Porject Completion Acknowledgments</h3>
-                <p><strong>ALBERTIAN INSTITUTE OF MANAGEMENT</strong><br>Main project</p>
-            </div>
-        </div>
+        </section>
+
     </main>
 
     <footer>
         <p>&copy; 2025 Emmanuel Senaij. Built with precision and passion.</p>
     </footer>
+
+    <script src="animations.js"></script>
 </body>
 
 </html>

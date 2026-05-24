@@ -5,10 +5,29 @@
     <meta charset="UTF-8">
     <title>About | Emmanuel Senaij</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Emmanuel Senaij – Cybersecurity professional with expertise in vulnerability management and penetration testing.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Page Transition Overlay -->
+    <div id="page-transition"></div>
+
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Cursor Trail -->
+    <div id="cursor-trail"></div>
+
+    <!-- Floating Social Sidebar -->
+    <aside class="social-sidebar" aria-label="Social Links">
+        <a href="https://github.com/fLsh123" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/emmanuel-senaij/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:emmanuelsenaij345@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://tryhackme.com/p/emmanuelsenaij34" target="_blank" title="TryHackMe"><i class="fas fa-flag"></i></a>
+    </aside>
+
     <header>
         <div class="logo">ES</div>
         <nav>
@@ -23,8 +42,8 @@
     </header>
 
     <main>
-        <h2>About Me</h2>
-        <div class="card">
+        <h2 class="reveal">About Me</h2>
+        <div class="card reveal">
             <p>Results-driven cybersecurity professional with hands-on experience in vulnerability management, risk
                 assessment,
                 and remediation planning. Skilled in conducting comprehensive vulnerability scans, CVE analysis, and
@@ -45,6 +64,8 @@
     <footer>
         <p>&copy; 2025 Emmanuel Senaij. Built with precision and passion.</p>
     </footer>
+
+    <script src="animations.js"></script>
 </body>
 
 </html>

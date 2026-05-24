@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <title>Contact | Emmanuel Senaij</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Emmanuel Senaij – open to new opportunities and collaborations.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+    <div id="page-transition"></div>
+    <canvas id="matrix-canvas"></canvas>
+    <div id="cursor-trail"></div>
+
+    <aside class="social-sidebar" aria-label="Social Links">
+        <a href="https://github.com/fLsh123" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/emmanuel-senaij/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:emmanuelsenaij345@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://tryhackme.com/p/emmanuelsenaij34" target="_blank" title="TryHackMe"><i class="fas fa-flag"></i></a>
+    </aside>
+
     <header>
         <div class="logo">ES</div>
         <nav>
@@ -24,50 +36,65 @@
     </header>
 
     <main>
-        <h2>Get In Touch</h2>
+        <h2 class="reveal">Get In Touch</h2>
+
+        <!-- Availability banner -->
+        <div class="availability-banner reveal">
+            <span class="avail-dot"></span>
+            <span>Available for freelance work &amp; new opportunities</span>
+            <span class="avail-location"><i class="fas fa-map-marker-alt"></i> Alappuzha, Kerala, India</span>
+        </div>
+
         <div class="grid-container">
-            <div class="card">
+            <div class="card reveal reveal-left">
                 <h3>Contact Info</h3>
                 <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
-                    visions.
-                </p>
+                    visions.</p>
                 <br>
-                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:emmanuelsenaij345@gmail.com"
-                        style="color: var(--text-color);">emmanuelsenaij345@gmail.com</a></p>
-
-                <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Alappuzha, Kerala, India</p>
-                <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a
-                        href="https://www.linkedin.com/in/emmanuel-senaij/" target="_blank"
-                        style="color: var(--accent-color);">emmanuel-senaij</a></p>
-                <p><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/fLsh123"
-                        target="_blank" style="color: var(--accent-color);">fLsh123</a></p>
+                <div class="contact-info-list">
+                    <a href="mailto:emmanuelsenaij345@gmail.com" class="contact-info-row">
+                        <span class="contact-info-icon"><i class="fas fa-envelope"></i></span>
+                        <span>emmanuelsenaij345@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/emmanuel-senaij/" target="_blank" class="contact-info-row">
+                        <span class="contact-info-icon"><i class="fab fa-linkedin"></i></span>
+                        <span>linkedin.com/in/emmanuel-senaij</span>
+                    </a>
+                    <a href="https://github.com/fLsh123" target="_blank" class="contact-info-row">
+                        <span class="contact-info-icon"><i class="fab fa-github"></i></span>
+                        <span>github.com/fLsh123</span>
+                    </a>
+                    <a href="https://tryhackme.com/p/emmanuelsenaij34" target="_blank" class="contact-info-row">
+                        <span class="contact-info-icon"><i class="fas fa-flag"></i></span>
+                        <span>tryhackme.com/p/emmanuelsenaij34</span>
+                    </a>
+                </div>
             </div>
 
-            <div class="card">
+            <div class="card reveal reveal-right">
                 <h3>Send Message</h3>
                 <form
                     action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeHFnM6gmhxgI-ivhowwX0cc0GbJmah5RAuHuiPMIyEgVZ2lA/formResponse"
                     method="POST" class="contact-form" id="contactForm">
-                    <!-- Hidden fields for Google Forms -->
                     <input type="hidden" name="fvv" value="1">
                     <input type="hidden" name="fbzx" value="-4411134323943803256">
                     <input type="hidden" name="pageHistory" value="0">
 
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name"><i class="fas fa-user"></i> Name</label>
                         <input type="text" id="name" name="entry.1247829509" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
                         <input type="email" id="email" name="entry.1954585830" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="entry.1434880176" rows="5" placeholder="Your Message"
-                            required></textarea>
+                        <label for="message"><i class="fas fa-comment-alt"></i> Message</label>
+                        <textarea id="message" name="entry.1434880176" rows="5" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Send <i class="fas fa-paper-plane"
-                            style="margin-left:8px;"></i></button>
+                    <button type="submit" class="btn" id="submitBtn">
+                        Send <i class="fas fa-paper-plane" style="margin-left:8px;"></i>
+                    </button>
                 </form>
             </div>
         </div>
@@ -77,8 +104,7 @@
     <div id="successModal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <i class="fas fa-check-circle"
-                style="color: var(--accent-green); font-size: 3rem; margin-bottom: 1rem;"></i>
+            <i class="fas fa-check-circle" style="color: var(--accent-green); font-size: 3rem; margin-bottom: 1rem;"></i>
             <h3>Message Sent!</h3>
             <p>Thanks for reaching out. I'll get back to you soon.</p>
             <button class="btn" id="closeModalBtn" style="margin-top: 1rem;">Close</button>
@@ -88,7 +114,9 @@
     <footer>
         <p>&copy; 2025 Emmanuel Senaij. Built with precision and passion.</p>
     </footer>
+
     <script src="javascript.js"></script>
+    <script src="animations.js"></script>
 </body>
 
 </html>
